@@ -1,0 +1,9 @@
+.move-down {
+   transform: translateY(0px);
+   opacity: 1;
+  
+}
+.move-up {
+   opacity: 0;
+   transform: translateY(-700px)
+}

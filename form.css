@@ -1,0 +1,122 @@
+* {
+   margin: 0;
+   padding: 0;
+   position: relative;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   transition: all 2s;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: #000;
+   --clr1: orangered;
+   --clr2: #eee;
+   color: var(--clr2);
+}
+
+.form-container {
+   position: absolute;
+   height: 500px;
+   width: 320px;
+   border: 1px solid var(--clr1);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 30px;
+   overflow: hidden;
+}
+
+.login {
+   height: inherit;
+   width: inherit;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   opacity: 1;
+}
+
+.login p:nth-child(odd) {
+   width: 100%;
+   top: 0;
+   position: absolute;
+   height: 200px;
+   border-radius: 0 0 80px 80px;
+   background: var(--clr1);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 40px;
+   font-family: cursive;
+   font-weight: bold;
+   text-align: center;
+}
+
+form {
+   width: 100%;
+   height: 300px;
+   bottom: -1px;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 20px;
+   gap: 10px;
+}
+
+.login form input {
+   height: 40px;
+   width: 90%;
+   background: #000;
+   outline: none;
+   border-radius: 15px;
+   color: var(--clr1);
+   padding: 10px;
+   font-size: 18px;
+   border: .5px solid;
+}
+.login label {
+   transform: translate(-75px, -40px);
+   transition: all .5s;
+   
+}
+input:focus + label, input:valid + label {
+    transform: translate(-75px, -60px);
+/* color: var(--clr1); */
+background: #000;
+letter-spacing: 3px;
+}
+.login .log {
+   height: 40px;
+   width: 90%;
+   color: #000;
+   background: var(--clr1);
+   font-weight: bold;
+   font-size: 18px;
+   border: none;
+   border-radius: 20px;
+}
+.btn {
+   color: var(--clr1);
+   background: #000;
+   border: none;
+   text-decoration: underline wavy;
+   font-size: 15px;
+   text-transform: uppercase;
+}
+a {
+   position: fixed;
+   top: 0;
+   left: -1px;
+   margin-left: 20px;
+   font-weight: bold;
+   font-size: 20px;
+   text-decoration: none;
+   color: var(--clr1);
+}
